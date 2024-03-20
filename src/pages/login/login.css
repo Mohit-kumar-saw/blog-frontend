@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=PT+Serif:ital@1&family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Croissant+One&family=PT+Serif:ital@1&family=Special+Elite&display=swap");
+
+.login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  top: 30%;
+}
+
+.login-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.loginContainer {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+
+.input {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.login-heading {
+  font-size: 20px;
+  margin-top: -10%;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  color: rgb(59, 59, 59);
+  font-family: "Averia Serif Libre", serif;
+  letter-spacing: 2px;
+}
+
+.msg {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: "Croissant One", serif;
+  color: springgreen;
+}
+
+.msg2 {
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Croissant One", serif;
+  color: rgb(45, 45, 45);
+}
+
+form > button {
+  background-color: #212121;
+  color: white;
+  width: 50%;
+  margin-top: 10px;
+}
+
+.input {
+  background: #fff;
+
+  margin-bottom: 40px;
+}
+
+.check {
+  background: #fff;
+  color: white;
+}
+
+form .login-input {
+  width: 50%;
+}
+
+button {
+  width: 102px;
+  height: 31px;
+  border-radius: 30px;
+  background: white;
+  position: relative;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+.green {
+  width: 101px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: springgreen;
+  position: absolute;
+  left: 101%;
+  transition: left 0.7s ease;
+}
+
+button:hover .green {
+  left: -0.5%;
+}
+
+button p {
+  position: absolute;
+  z-index: 99;
+  font-family: "Averia Serif Libre", serif;
+}
+
+.login .link {
+  font-size: 14px;
+  padding-top: 20px;
+  color: gray;
+}
+
+@media (min-width: 350px) and (max-width: 668px) {
+  .img-container {
+    display: none;
+  }
+
+  .msg {
+    display: none;
+  }
+
+  form .login-input {
+    width: 90%;
+  }
+}

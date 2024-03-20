@@ -1,0 +1,237 @@
+p {
+  font-size: 14px;
+  color: black;
+  font-weight: 300;
+}
+
+h3 {
+  color: gray;
+}
+
+.card-box {
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.card-box p {
+  height: 70px;
+}
+
+.card-container {
+  margin-left: 75px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.blog {
+  margin: 50px 0;
+  margin-bottom: 40px;
+  width: 100%;
+  margin-top: 60px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.blog .card-heading {
+  font-size: 2rem;
+  margin-left: 7%;
+  margin-bottom: 3%;
+  font-family: "Croissant One", serif;
+  color: rgb(50, 50, 50);
+}
+
+.blog #select {
+  padding: 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-family: "Croissant One", serif;
+  font-weight: bold;
+  color: rgb(83, 84, 83);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.blog button {
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  color: rgb(25, 25, 25);
+  font-family: "Croissant One", serif;
+  font-weight: 500;
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: none;
+}
+
+.popular {
+  display: flex;
+  gap: 10px;
+}
+
+.blog button:hover {
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+.blog .btn {
+  background-color: rgb(152, 35, 179);
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.blog .btn:hover {
+  color: rgb(152, 35, 179);
+  background-color: white;
+}
+
+#select option {
+  font-family: "Croissant One", serif;
+}
+
+.blog .boxItem {
+  transition: 0.5s;
+}
+
+.blog .boxItem:hover {
+  /* box-shadow:0 2px 4px rgb(0 0 0 /8%) ; */
+  cursor: pointer;
+  transform: translateY(-5px);
+  background: transparent;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.blog img {
+  width: 360px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.details {
+  width: 360px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+h3 {
+  font-size: 17px;
+}
+label {
+  font-size: 12px;
+  text-align: center;
+}
+
+.icon {
+  margin-right: 3px;
+  font-size: 14px;
+}
+
+.catagory-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.select-blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-left: 7%;
+}
+
+@media (min-width: 350px) and (max-width: 668px) {
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .card-box {
+    width: 80vw;
+    overflow: hidden;
+  }
+
+  .card-container {
+    margin-left: 0;
+  }
+
+  .blog {
+    margin: 50px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 60px;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  .blog .boxItem {
+    transition: 0.5s;
+  }
+
+  .blog .btn {
+    font-size: 12px;
+    margin-right: 10px;
+    height: 30px;
+    padding: 17px 10px;
+  }
+
+  .blog button {
+    font-size: 10px;
+    padding: 5px;
+    display: none;
+  }
+
+  #select {
+    font-size: 12px;
+  }
+
+  .blog img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .details {
+    width: 250px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .card-box {
+    margin-bottom: 20px;
+  }
+}

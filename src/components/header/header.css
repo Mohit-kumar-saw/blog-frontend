@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Carrois+Gothic&family=Croissant+One&family=PT+Serif:ital@1&family=Special+Elite&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navcontainer {
+  box-shadow: 0 2px 4px rgba(53, 51, 51, 0.423);
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  z-index: 43;
+}
+
+.main-header {
+  width: 100%;
+}
+.scontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+}
+
+.flex {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+ul li a {
+  color: rgb(7, 19, 65);
+  font-family: "Carrois Gothic", sans-serif;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.navbar ul li a:hover {
+  border-bottom: 2px solid gray;
+}
+
+.logo {
+  margin: 0;
+  width: 90px;
+  height: 60px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.logo > img {
+  width: 50px;
+  object-fit: cover;
+}
+
+@media (min-width: 350px) and (max-width: 668px) {
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+}

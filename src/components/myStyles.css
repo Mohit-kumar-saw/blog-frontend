@@ -1,0 +1,139 @@
+.blog-container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-heading {
+  font-size: 3rem;
+  color: rgb(72, 72, 72);
+  font-weight: bolder;
+  margin-bottom: 60px;
+  font-family: "Croissant One", serif;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.blog-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  width: 100%;
+  padding-left: 60px;
+}
+
+.blog-card-box {
+  height: 400px;
+  width: 380px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.1s ease-in-out;
+  margin-bottom: 40px;
+}
+
+.blog-card-box:hover {
+  scale: 1.03;
+}
+
+.blog-card-img {
+  width: 350px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.blog-card-img img {
+  width: 450px;
+}
+
+.blog-details {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tag {
+  padding: 10px 0;
+}
+
+.link-btn {
+  color: rgb(38, 38, 38);
+  font-family: "Croissant One", serif;
+}
+
+.my-blog-btn:hover .link-btn {
+  color: white;
+}
+.link-btn2 {
+  color: rgb(255, 255, 255);
+  font-family: "Croissant One", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn:hover .link-btn2 {
+  color: rgb(169, 1, 225);
+}
+
+/* about page */
+
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-page h1,
+.about-page h2 {
+  margin-top: 20px;
+  font-family: "Croissant One", serif;
+  color: rgb(42, 42, 42);
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: rgb(51, 50, 50);
+  font-family: "Averia Serif Libre", serif;
+}
+
+.about-page a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+
+.about-page a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.about-img {
+  margin-top: 40px;
+}
+
+/* contact */
+
+.contact {
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact p {
+  font-size: 2rem;
+  font-family: "Croissant One", serif;
+  color: rgb(71, 71, 71);
+  justify-content: center;
+  align-items: center;
+}

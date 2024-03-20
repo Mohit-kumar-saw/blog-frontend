@@ -1,0 +1,124 @@
+.category {
+  position: relative;
+  width: 100vw;
+  height: 500px;
+}
+
+.category .box {
+  border-radius: 0;
+  text-align: center;
+}
+
+img {
+  object-fit: cover;
+}
+
+.category p {
+  text-transform: capitalize;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.title {
+  font-weight: bolder;
+  font-family: "Croissant One", serif;
+}
+
+.category img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.category .box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 83.3%;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.373);
+}
+.category .box {
+  cursor: pointer;
+  position: relative;
+}
+
+.category .overlay {
+  cursor: pointer;
+  position: absolute;
+  top: 180px;
+  padding: 20px;
+  text-align: center;
+  width: 85%;
+  z-index: 2;
+  color: #ffffff9d;
+  text-align: center;
+}
+
+.category .overlay h4 {
+  font-weight: 500;
+  color: rgb(253, 246, 126);
+  text-align: center;
+}
+
+.category .overlay p {
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  padding: 15px;
+}
+
+.slick-slider {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  /* z-index: -4; */
+}
+
+.slick-slider > button {
+  margin-left: 29px;
+  z-index: 2;
+}
+
+.slick-slider > .slick-next {
+  margin-right: 48px;
+}
+
+
+@media (min-width: 350px) and (max-width: 668px) {
+
+  .category {
+    
+    height: 300px;
+  }
+
+  .category img {
+    height: 300px;
+   
+  }
+
+  .category .box::after {
+   
+    height: 300px;
+  }
+
+  .category .overlay {
+   
+    top: 50px;
+  
+  }
+
+  .slick-slider {
+   
+    height: 300px;
+   
+  }
+
+  .category p {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+ 
+}  

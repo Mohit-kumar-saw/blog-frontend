@@ -1,0 +1,41 @@
+.left img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.singlePost{
+    padding: 50px;
+}
+
+.singlePost .button2{
+    margin-top: 10px;
+}
+
+.singlePost .button:nth-child(1){
+    background: #10ac84;
+    color: white;
+    margin-right: 10px;
+    font-size: 14px;
+    
+}
+.singlePost .button:nth-child(2){
+    background: #ee5253;
+    color: white;
+    font-size: 14px;
+padding:8px 20px;
+}
+
+.postHeading{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+

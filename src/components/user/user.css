@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.openProfile {
+  position: absolute;
+  right: 0%;
+  top: 108%;
+  color: #02a2ff;
+  z-index: 44;
+  border-radius: 10px;
+  padding: 15px 50px 15px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+}
+
+.text > p {
+  color: rgb(73, 73, 73);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.navigations {
+  width: 100%;
+  border: none;
+}
+
+.text {
+  background-color: rgb(223, 232, 241);
+  width: 166%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: -20px;
+  padding-left: 20px;
+}
+
+.profile > .img {
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.profile > .img > img {
+  object-fit: cover;
+  height: 70px;
+}
+.box {
+  width: 120%;
+  background-color: transparent;
+  padding-left: 0;
+  border-radius: 8%;
+}
+
+.box:hover {
+  background-color: lightgray;
+  border: none;
+}
+.box h4 {
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  background: transparent;
+  text-align: left;
+  border: none;
+  color: rgb(46, 46, 46);
+}
+
+.openProfile > button:hover {
+  border: none;
+
+  background-color: lightgray;
+}
+
+.openProfile > .image {
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 1px solid rgb(215, 215, 215);
+  margin-bottom: 10px;
+}
+.openProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-right: 20px;
+  top: 11%;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.logout {
+  color: rgb(186, 61, 61);
+  cursor: pointer;
+}
+.profile li {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+
+li:hover {
+  scale: 1.05;
+}
