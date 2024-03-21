@@ -64,7 +64,7 @@ const Blog = () => {
                 <Link to={`/details/${item._id}`} className="link">
                   <h3>{item.title}</h3>
                 </Link>
-                <p>{item.desc.slice(0, 180)}...</p>
+                <p className="desc">{item.desc.slice(0, 180)}...</p>
                 <div className="date">
                   <AiOutlineClockCircle className="icon" />
                   <label htmlFor="">{item.date}</label>
