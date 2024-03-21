@@ -1,10 +1,12 @@
 import React from 'react'
 import './account.css'
+import Header from '../../components/header/Header'
 
 const Account = () => {
   return (
     <>
     <section className='accountInfo'>
+    <Header/>
     <div className='singupContianer '>
         <h1 className='heading'>Update Account </h1>
         <div className="content ">

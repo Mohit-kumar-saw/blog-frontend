@@ -289,4 +289,13 @@ form > .input > label {
   .footer .mid-footer .mid-left {
     width: 100%;
   }
+
+  .singup form{
+    margin-top: 30%;
+    height: 60vh;
+  }
+
+  .singupContainer{
+    display: block;
+  }
 }

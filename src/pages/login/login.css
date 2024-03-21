@@ -154,4 +154,14 @@ button p {
   form .login-input {
     width: 90%;
   }
+
+  .login form{
+    margin-top: 20%;
+    height: 60vh;
+  }
+
+  .loginContainer{
+    display: block;
+  }
+ 
 }

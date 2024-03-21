@@ -5,6 +5,7 @@ import axios from "axios";
 import pic from "../../images/pic.png";
 import blog from "../../images/blog-logo2.png";
 import { Button, TextField } from "@mui/material";
+import { BASE_URL } from "../../Url";
 
 const Singup = () => {
   const baseUrl = "http://localhost:5000";
@@ -30,9 +31,9 @@ const Singup = () => {
 
     try {
       axios
-        .post(`${baseUrl}/api/auth/register`, { username, email, password })
+        .post(`${BASE_URL}/api/auth/register`, { username, email, password })
         .then((data) => {
-          localStorage.setItem("userInfo", JSON.stringify(data));
+          localStorage.setItem("userData", JSON.stringify(data));
           console.log(localStorage.getItem("userInfo"));
           navigate("/home");
           alert("Register successFull");
@@ -67,20 +68,7 @@ const Singup = () => {
           <form>
             <p className="login-heading">Register</p>
             <div className="input">
-              {/* <label htmlFor="">Username </label>
-              <input
-                onChange={(e) => setUsername(e.target.value)}
-                value={username}
-              />
-              <label htmlFor="">Email </label>
-              <input onChange={(e) => setEmail(e.target.value)} value={email} />
-
-              <label htmlFor="">Password</label>
-              <input
-                type={show ? "text" : "password"}
-                onChange={(e) => setPassword(e.target.value)}
-                value={password}
-              /> */}
+            
 
               <TextField
                 id="standard-basic"
@@ -89,7 +77,7 @@ const Singup = () => {
                 variant="outlined"
                 color="secondary"
                 name="name"
-                value={name}
+                value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 onKeyDown={(event) => {
                   if (event.code == "Enter") {

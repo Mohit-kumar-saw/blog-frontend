@@ -5,9 +5,9 @@ import axios from "axios";
 import { Backdrop, Button, CircularProgress, TextField } from "@mui/material";
 import pic from "../../images/pic.png";
 import blog from "../../images/blog-logo2.png";
+import { BASE_URL } from "../../Url";
 
 const Login = () => {
-  const baseUrl = "http://localhost:5000";
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [user, setUser] = useState("");
@@ -27,7 +27,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post(`${baseUrl}/api/auth/login`, {
+      const response = await axios.post(`${BASE_URL}/api/auth/login`, {
         name,
         password,
       });

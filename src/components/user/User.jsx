@@ -66,16 +66,24 @@ const User = () => {
 
                 <ul>
                   <li>
-                    <a href="/create"> Create Post</a>
+                    <p onClick={()=>{
+                      nav("/create")
+                    }}> Create Post</p>
                   </li>
                   <li>
-                    <a href="/account"> Update Account</a>
+                    <p onClick={()=>{
+                      nav("/account")
+                    }}> Update Account</p>
                   </li>
                   <li>
-                    <a href="/blog"> My Blog</a>
+                    <p onClick={()=>{
+                      nav("/blog")
+                    }}> My Blog</p>
                   </li>
                   <li>
-                    <a href=""> Contact Us</a>
+                    <p onClick={()=>{
+                      nav("/contact")
+                    }}> Contact Us</p>
                   </li>
                   <li
                     onClick={() => {
