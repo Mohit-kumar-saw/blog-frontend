@@ -1,17 +1,20 @@
 import React from "react";
 import "./header.css";
 import User from "../user/User";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import blog from "../../images/blog-logo2.png";
 
 const Header = () => {
+  const nav =useNavigate()
   return (
     <div className="main-header">
       <header>
         <div className="navcontainer">
           <div className="scontainer flex">
             <div className="logo">
-              <img src={blog} alt="" />
+              <img src={blog} alt="" onClick={()=>{
+                   nav("/home")
+              }} />
             </div>
             <nav>
               <ul className="navbar flex">

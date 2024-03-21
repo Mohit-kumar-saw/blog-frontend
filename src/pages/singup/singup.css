@@ -255,6 +255,7 @@ form > .input > label {
   .search input {
     height: 35px;
     width: 100%;
+    font-size: 14px;
   }
 
   .button1 {
