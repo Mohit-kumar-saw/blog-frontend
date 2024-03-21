@@ -216,7 +216,7 @@ label {
   }
 
   .blog img {
-    width: 250px;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
@@ -233,5 +233,9 @@ label {
 
   .card-box {
     margin-bottom: 20px;
+  }
+  .card-box p {
+    height: 70px;
+    overflow: hidden;
   }
 }
