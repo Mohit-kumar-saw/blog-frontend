@@ -8,39 +8,32 @@ import { Button, TextField } from "@mui/material";
 import { BASE_URL } from "../../Url";
 
 const Singup = () => {
-  const baseUrl = "http://localhost:5000";
-
   const navigate = useNavigate();
-
   const [show, setShow] = useState(false);
-  const [username, setUsername] = useState();
-  const [password, setPassword] = useState();
-  const [email, setEmail] = useState();
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
 
   const handleShow = () => {
     setShow(!show);
   };
 
-  const HandleRegister = async (event) => {
+  const handleRegister = async (event) => {
     event.preventDefault();
     if (!email || !username || !password) {
-      alert("please fill all the filelds");
-
+      alert("Please fill in all fields");
       return;
     }
 
     try {
-      axios
-        .post(`${BASE_URL}/api/auth/register`, { username, email, password })
-        .then((data) => {
-          localStorage.setItem("userData", JSON.stringify(data));
-          console.log(localStorage.getItem("userInfo"));
-          navigate("/home");
-          alert("Register successFull");
-        });
+      const response = await axios.post(`${BASE_URL}/api/auth/register`, { username, email, password });
+      localStorage.setItem("userData", JSON.stringify(response.data));
+      console.log(localStorage.getItem("userData"));
+      navigate("/home");
+      alert("Registration successful");
     } catch (error) {
-      console.log(error);
-      alert(error);
+      console.error(error);
+      alert("An error occurred during registration");
     }
   };
 
@@ -98,7 +91,7 @@ const Singup = () => {
                 onKeyDown={(event) => {
                   if (event.code == "Enter") {
                     // console.log(event);
-                    HandleRegister();
+                    handleRegister();
                   }
                 }}
               />
@@ -116,7 +109,7 @@ const Singup = () => {
                 onKeyDown={(event) => {
                   if (event.code == "Enter") {
                     // console.log(event);
-                    HandleRegister();
+                    handleRegister();
                   }
                 }}
               />
@@ -126,7 +119,7 @@ const Singup = () => {
             <Button
               variant="outlined"
               color="secondary"
-              onClick={HandleRegister}
+              onClick={handleRegister}
               className="login-btn"
             >
               Sing-Up
