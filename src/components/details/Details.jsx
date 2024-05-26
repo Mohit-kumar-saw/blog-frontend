@@ -49,12 +49,8 @@ const Details = () => {
               <img src={foundBlog.pic} alt="" />
             </div>
             <div className="right">
-              <div className="button2">
-                <button className="button">Edit</button>
-                <button className="button">
-                  <AiOutlineDelete />
-                </button>
-              </div>
+              
+             
               <h2 className="postHeading">{foundBlog.title}</h2>
               <p>{foundBlog.desc}</p>
             </div>
