@@ -11,6 +11,7 @@ import {
   AiOutlineTags,
 } from "react-icons/ai";
 import { BASE_URL } from "../../Url";
+import ShimmerCard from "../ShimmerCard/ShimmerCard";
 
 const Card = ({ prop }) => {
   const [cards, setCards] = useState([]);
@@ -52,7 +53,7 @@ const Card = ({ prop }) => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <ShimmerCard/>;
   }
 
   if (error) {

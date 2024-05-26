@@ -9,6 +9,8 @@ import {
 import { Link } from "react-router-dom";
 import Header from "./header/Header";
 import { BASE_URL } from "../Url";
+import { Shield } from "@mui/icons-material";
+import ShimmerCard from "./ShimmerCard/ShimmerCard";
 
 const Blog = () => {
   const [data, setData] = useState([]);
@@ -49,6 +51,7 @@ const Blog = () => {
     <div className="blog-container">
       <Header />
       <p className="blog-heading">My blogs</p>
+
       <div className="blog-card-container ">
         {data && data.length > 0 ? (
           data.map((item) => (

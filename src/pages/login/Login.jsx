@@ -13,12 +13,14 @@ const Login = () => {
   const [user, setUser] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
 
   const handleClick = () => {
     setShowPassword(!showPassword);
   };
 
   const handleSubmit = async (event) => {
+    setLoading(true);
     event.preventDefault();
 
     if (!name || !password) {
@@ -31,9 +33,11 @@ const Login = () => {
         name,
         password,
       });
+     
 
       if (response.status === 200) {
         console.log("Login successful");
+        setLoading(false);
         localStorage.setItem("userData", JSON.stringify(response.data));
 
         navigate("/home");
@@ -43,10 +47,18 @@ const Login = () => {
     } catch (error) {
       console.log(error);
     }
+    setLoading(false);
+
   };
 
   return (
     <div className="login">
+    <Backdrop
+        sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={loading}
+      >
+        <CircularProgress color="secondary" />
+      </Backdrop>
       <div className="login-header">
         <div className="logo">
           <img src={blog} alt="" />
@@ -122,6 +134,12 @@ const Login = () => {
           >
             Login
           </Button>
+
+
+
+
+
+
           <div className="link">
             Don't have an account? <Link to="/register">Sing-Up</Link>
           </div>
